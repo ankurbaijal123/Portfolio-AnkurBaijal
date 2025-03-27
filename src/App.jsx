@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaMoon, FaSun, FaDownload, FaEnvelope } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import Leetcode from './Leetcode';
+import foodies from "./assets/foodies.png";
+import gk from "./assets/gk.png";
+import images from "./assets/images.png";
+import namaste from "./assets/namaste.png";
+import phone from "./assets/phone.png";
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +37,7 @@ function App() {
       tech: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/ankurbaijal123/foodiesankur",
       demo: "https://foodies-app-demo.netlify.app",
-      image: "https://private-user-images.githubusercontent.com/155554484/423199315-b42fa371-1171-4c0a-a008-36c40394cf6c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODQ5MDcsIm5iZiI6MTc0MzA4NDYwNywicGF0aCI6Ii8xNTU1NTQ0ODQvNDIzMTk5MzE1LWI0MmZhMzcxLTExNzEtNGMwYS1hMDA4LTM2YzQwMzk0Y2Y2Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyN1QxNDEwMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZDE2NTQzOGNjYzNiM2M1NzZmYWQxMjgzOGY3NTNkNDg0ZDNjNTM2NzczZjNjODQ2ODBiNDgzMzdhNDA3NjJkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EU40oQ6ESRpCm7oUQVh_5dHki9Ji2Jn6Yn0lkjCHOyQ" 
+      image: foodies
     },
     {
       name: "NetflixGPT",
@@ -40,7 +45,7 @@ function App() {
       tech: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
       github: "https://github.com/ankurbaijal123/netflixgpt",
       demo: "https://netflixgpt-demo.netlify.app",
-      image: "https://private-user-images.githubusercontent.com/155554484/423200683-8cc97bed-1e87-44cd-aa12-04189a23d22b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODQ4NTIsIm5iZiI6MTc0MzA4NDU1MiwicGF0aCI6Ii8xNTU1NTQ0ODQvNDIzMjAwNjgzLThjYzk3YmVkLTFlODctNDRjZC1hYTEyLTA0MTg5YTIzZDIyYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyN1QxNDA5MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZTdjNzYyMjA5NWI4YWFlYTIwNDVkYTA5MWI0ZWFhOGQ4YjMzZDIyYzc0ZGE4MjM4MDFlOTVmODYxNzczZGQ0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.e5jzw0rSBFJNommjWo2khRQrVJnC5uN-ooQC480H7nQ"
+      image: namaste
     },
     {
       name: "GK Quiz",
@@ -48,21 +53,21 @@ function App() {
       tech: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/ankurbaijal123/GK-Quiz",
       demo : "https://effulgent-sunflower-b2782e.netlify.app/",
-      image: "https://private-user-images.githubusercontent.com/155554484/404537117-a9ec129e-ef0d-4f2d-b572-98041c37a786.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODUwMjAsIm5iZiI6MTc0MzA4NDcyMCwicGF0aCI6Ii8xNTU1NTQ0ODQvNDA0NTM3MTE3LWE5ZWMxMjllLWVmMGQtNGYyZC1iNTcyLTk4MDQxYzM3YTc4Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyN1QxNDEyMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yODhmODgzYTE0ZTA1OTYwZjM0YWExNmUxOWQxNmE4MzJkZmVmNDE4ZmQzOGU0ZDc2ZmJlOTFhOTg1NmM5NmU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.02pQpv0FZj9di6qzijBpDefYvbrh038wN-WR2R5TioA"
+      image: gk
     },
     {
       name: "Image Processing Website Project",
       description: "A full-stack application that allows users to upload, process, and download images with features like brightness, contrast, and rotation adjustments.",
       tech: ["React", "Node.js", "Express"],
       github: "https://github.com/ankurbaijal123/Image-Processing-Website-Project",
-      image: "https://private-user-images.githubusercontent.com/155554484/367880442-cb26f2ca-2d66-4bd6-807b-016918c07624.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODQ5NDMsIm5iZiI6MTc0MzA4NDY0MywicGF0aCI6Ii8xNTU1NTQ0ODQvMzY3ODgwNDQyLWNiMjZmMmNhLTJkNjYtNGJkNi04MDdiLTAxNjkxOGMwNzYyNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyN1QxNDEwNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZjU2YTcwOTYzNjQ0MWZlMmE4Mzg2OGYzZDU0ZGI2ZjRkYmE4NWE0YTc1ZTFjZDFkYTU0MzYzM2YwZjA3ZDBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HXAwxTF9wlpK4rrcmb2juMeuYHh2oxblhRklU63id70"
+      image: images
     },
     {
       name: "Phone Automation",
       description: "Integrated Scrcpy for real-time screen mirroring, Appium for automation testing, Twilio API for communication, and Tesseract for OCR.",
       tech: ["Python", "Scrcpy", "Appium", "Twilio API", "Tesseract"],
       github: "https://github.com/ankurbaijal123/Phone-Automation-Testing",
-      image: "https://private-user-images.githubusercontent.com/155554484/353136156-3a9ac446-ab8e-4b3f-8243-e186da3f3501.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODQ5ODYsIm5iZiI6MTc0MzA4NDY4NiwicGF0aCI6Ii8xNTU1NTQ0ODQvMzUzMTM2MTU2LTNhOWFjNDQ2LWFiOGUtNGIzZi04MjQzLWUxODZkYTNmMzUwMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyN1QxNDExMjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZGFiZGUwYjk0YTk2M2I2MGUwNDY1YjZiMWQ3YzBjNDNjMGM0MmZhOTg1MDEzNjNiODBkMjgyZmQ5MTE0YzNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.iPqi3vc1_jyEkWpNqgoNQukZdQBbxUO9Yx6y0JOrOxM"
+      image: phone
     },
     
     {
