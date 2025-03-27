@@ -207,39 +207,45 @@ function App() {
       <Leetcode />
 
       {/* Skills Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {Object.entries(skills).map(([category, skillList], index) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`p-6 rounded-lg ${darkMode ? 'bg-primary/30' : 'bg-gray-50 shadow-lg'}`}
-              >
-                <h3 className="text-xl font-bold mb-4 text-accent capitalize">{category}</h3>
-                <ul className="space-y-2">
-                  {skillList.map((skill, idx) => (
-                    <motion.li
-                      key={idx}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: idx * 0.1 }}
-                      className={darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'}
-                    >
-                      {skill}
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+<section className="py-20">
+<div className="container mx-auto px-4">
+  <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+    {Object.entries(skills).map(([category, skillList], index) => (
+      <motion.div
+        key={category}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        className={`p-6 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] cursor-pointer ${
+          darkMode ? 'bg-primary/30' : 'bg-gray-50 shadow-lg'
+        }`}
+      >
+        <h3 className="text-xl font-bold mb-4 text-accent capitalize">{category}</h3>
+        <ul className="space-y-2">
+          {skillList.map((skill, idx) => (
+            <motion.li
+              key={idx}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className={`transition duration-300 cursor-pointer ${
+                darkMode
+                  ? 'text-textSecondary-dark hover:text-white'
+                  : 'text-textSecondary-light hover:text-gray-800'
+              }`}
+            >
+              {skill}
+            </motion.li>
+          ))}
+        </ul>
+      </motion.div>
+    ))}
+  </div>
+</div>
+</section>
 
       {/* Projects Section */}
 <section className={`py-20 ${darkMode ? 'bg-primary/50' : 'bg-white'}`}>
@@ -324,6 +330,9 @@ function App() {
               <h3 className="text-xl font-bold mb-4 text-accent">ITM University Gwalior</h3>
               <p className={`mb-6 ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'}`}>
                 B.Tech in Computer Science
+              </p>
+              <p className={`mb-6 ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'}`}>
+                CGPA: 8.37
               </p>
               <h4 className="text-lg font-bold mb-2">Key Coursework:</h4>
               <ul className="grid md:grid-cols-2 gap-2">
