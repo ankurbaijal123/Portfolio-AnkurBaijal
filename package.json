@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -38,5 +40,7 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.4.2"
-  }
+  },
+  "homepage": "https://ankurbaijal123.github.io/Portfolio-AnkurBaijal"
+
 }
