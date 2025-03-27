@@ -85,7 +85,7 @@ function App() {
     languages: ["Java", "JavaScript", "Python", "C++", "C"],
     frameworks: ["React.js", "Bootstrap", "Tailwind CSS"],
     databases: ["PostgreSQL", "MongoDB", "MySQL"],
-    tools: ["Git", "CLI"]
+    tools: ["Git","GitHub", "CLI", "Redux Toolkit"]
   };
 
   const achievements = [
