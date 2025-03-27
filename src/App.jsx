@@ -116,7 +116,7 @@ function App() {
               {darkMode ? <FaSun /> : <FaMoon />}
             </button>
             <a 
-              href="/Ankur_Baijal_Resume.pdf" 
+            href="https://ankurbaijal123.github.io/Portfolio-AnkurBaijal/Ankur_Baijal_Resume.pdf" 
               download 
               className="flex items-center space-x-2 px-4 py-2 rounded-full bg-secondary text-primary hover:bg-secondary/80 transition-colors"
             >
