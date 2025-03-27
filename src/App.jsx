@@ -40,7 +40,7 @@ function App() {
       image: foodies
     },
     {
-      name: "NetflixGPT",
+      name: "Namaste Movie",
       description: "AI-powered recommendation system for personalized movie and TV show suggestions using ChatGPT API.",
       tech: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
       github: "https://github.com/ankurbaijal123/netflixgpt",
