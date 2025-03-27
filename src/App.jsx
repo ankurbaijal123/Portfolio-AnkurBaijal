@@ -36,7 +36,7 @@ function App() {
       description: "A food delivery app with a sleek UI, dynamic menu, and order tracking.",
       tech: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/ankurbaijal123/foodiesankur",
-      demo: "https://foodies-app-demo.netlify.app",
+      demo: "https://namastemovie-81eb3.web.app/",
       image: foodies
     },
     {
@@ -44,7 +44,7 @@ function App() {
       description: "AI-powered recommendation system for personalized movie and TV show suggestions using ChatGPT API.",
       tech: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
       github: "https://github.com/ankurbaijal123/netflixgpt",
-      demo: "https://netflixgpt-demo.netlify.app",
+      demo: "https://namastemovie-81eb3.web.app/",
       image: namaste
     },
     {
