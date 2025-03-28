@@ -31,44 +31,44 @@ function App() {
   };
 
   const projects = [
-    {
-      name: "Foodies App",
-      description: "A food delivery app with a sleek UI, dynamic menu, and order tracking.",
-      tech: ["React", "Tailwind CSS", "Firebase"],
-      github: "https://github.com/ankurbaijal123/foodiesankur",
-      demo: "https://namastemovie-81eb3.web.app/",
-      image: foodies
-    },
-    {
-      name: "Namaste Movie",
-      description: "AI-powered recommendation system for personalized movie and TV show suggestions using ChatGPT API.",
-      tech: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
-      github: "https://github.com/ankurbaijal123/netflixgpt",
-      demo: "https://namastemovie-81eb3.web.app/",
-      image: namaste
-    },
-    {
-      name: "GK Quiz",
-      description: "A general knowledge quiz application to test and improve your GK skills.",
-      tech: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com/ankurbaijal123/GK-Quiz",
-      demo : "https://effulgent-sunflower-b2782e.netlify.app/",
-      image: gk
-    },
-    {
-      name: "Image Processing Website Project",
-      description: "A full-stack application that allows users to upload, process, and download images with features like brightness, contrast, and rotation adjustments.",
-      tech: ["React", "Node.js", "Express"],
-      github: "https://github.com/ankurbaijal123/Image-Processing-Website-Project",
-      image: images
-    },
-    {
-      name: "Phone Automation",
-      description: "Integrated Scrcpy for real-time screen mirroring, Appium for automation testing, Twilio API for communication, and Tesseract for OCR.",
-      tech: ["Python", "Scrcpy", "Appium", "Twilio API", "Tesseract"],
-      github: "https://github.com/ankurbaijal123/Phone-Automation-Testing",
-      image: phone
-    },
+      {
+        "name": "Foodies - Modern Food Ordering Web Application",
+        "description": "A feature-rich food ordering app with real-time restaurant data, dynamic menus, and a responsive UI.",
+        "tech": ["React", "Tailwind CSS", "Redux", "Parcel"],
+        "github": "https://github.com/ankurbaijal123/foodiesankur",
+        "demo": "https://namastemovie-81eb3.web.app/",
+        "image": foodies
+      },
+      {
+        "name": "Namaste Movie – AI-Powered Movie Recommendation",
+        "description": "A movie streaming platform with AI-powered search using OpenAI's GPT API, featuring autoplay trailers and multi-language support.",
+        "tech": ["React.js", "Redux", "OpenAI API", "TMDB API", "Tailwind CSS"],
+        "github": "https://github.com/ankurbaijal123/netflixgpt",
+        "demo": "https://namastemovie-81eb3.web.app/",
+        "image": namaste
+      },
+      {
+        "name": "GK Quiz",
+        "description": "A general knowledge quiz application with an intuitive UI to test and enhance GK skills.",
+        "tech": ["React", "JavaScript", "Tailwind CSS"],
+        "github": "https://github.com/ankurbaijal123/GK-Quiz",
+        "demo": "https://effulgent-sunflower-b2782e.netlify.app/",
+        "image": gk
+      },
+      {
+        "name": "Full-Stack Image Processing Web App",
+        "description": "A web application that enables users to upload, edit, and process images in real-time with brightness, contrast, and rotation adjustments.",
+        "tech": ["React", "Node.js", "Express", "Sharp"],
+        "github": "https://github.com/ankurbaijal123/Image-Processing-Website-Project",
+        "image": images
+      },
+      {
+        "name": "Phone Automation for Android & iOS Devices",
+        "description": "A Python-based automation tool integrating Scrcpy for screen mirroring, Appium for testing, Twilio API for communication, and Tesseract OCR.",
+        "tech": ["Python", "PyQtGui", "ADB", "Scrcpy", "Appium", "Twilio API", "Tesseract OCR", "OpenCV"],
+        "github": "https://github.com/ankurbaijal123/Phone-Automation-Testing",
+        "image": phone
+      },
     
     {
       name: "StackMate",
