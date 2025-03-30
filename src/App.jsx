@@ -7,6 +7,7 @@ import gk from "./assets/gk.png";
 import images from "./assets/images.png";
 import namaste from "./assets/namaste.png";
 import phone from "./assets/phone.png";
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
@@ -140,9 +141,20 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h1 className="text-6xl font-bold mb-4">
-              Hi there 👋, I'm <span className="text-accent">Ankur Baijal</span>
-            </h1>
+          
+
+          <h1 className="text-6xl font-bold mb-4">
+            Hi there{" "}
+            <motion.span 
+              animate={{ rotate: [0, 10, 0, -10, 0] }} 
+              transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+              className="inline-block"
+            >
+              👋
+            </motion.span>, 
+            I'm <span className="text-accent">Ankur Baijal</span>
+          </h1>
+          
             <h2 className={`text-2xl ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'} mb-6`}>
               Final-year Computer Science student at ITM University Gwalior
               <br />
