@@ -45,7 +45,7 @@ function App() {
         "description": "A movie streaming platform with AI-powered search using OpenAI's GPT API, featuring autoplay trailers and multi-language support.",
         "tech": ["React.js", "Redux", "OpenAI API", "TMDB API", "Tailwind CSS"],
         "github": "https://github.com/ankurbaijal123/netflixgpt",
-        "demo": "https://namastemovie-81eb3.web.app/",
+        "demo": "https://namastemovie-e8515.web.app/",
         "image": namaste
       },
       {
