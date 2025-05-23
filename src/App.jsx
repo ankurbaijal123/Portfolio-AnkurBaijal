@@ -37,7 +37,7 @@ function App() {
         "description": "A feature-rich food ordering app with real-time restaurant data, dynamic menus, and a responsive UI.",
         "tech": ["React", "Tailwind CSS", "Redux", "Parcel"],
         "github": "https://github.com/ankurbaijal123/foodiesankur",
-        "demo": "https://namastemovie-81eb3.web.app/",
+        "demo": "https://namastemovie-e8515.web.app/",
         "image": foodies
       },
       {
@@ -45,7 +45,7 @@ function App() {
         "description": "A movie streaming platform with AI-powered search using OpenAI's GPT API, featuring autoplay trailers and multi-language support.",
         "tech": ["React.js", "Redux", "OpenAI API", "TMDB API", "Tailwind CSS"],
         "github": "https://github.com/ankurbaijal123/netflixgpt",
-        "demo": "https://namastemovie-81eb3.web.app/",
+        "demo": "https://namastemovie-e8515.web.app/",
         "image": namaste
       },
       {
@@ -158,7 +158,7 @@ function App() {
             <h2 className={`text-2xl ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'} mb-6`}>
               Final-year Computer Science student at ITM University Gwalior
               <br />
-              <span className="text-secondary">Upcoming SDE Intern at Origin Medical</span>
+              <span className="text-secondary">SDE Intern at Origin Medical</span>
             </h2>
             <p className={`text-lg ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'} mb-8`}>
               Passionate about problem-solving and software development
