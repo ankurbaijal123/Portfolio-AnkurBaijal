@@ -158,7 +158,7 @@ function App() {
             <h2 className={`text-2xl ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'} mb-6`}>
               Final-year Computer Science student at ITM University Gwalior
               <br />
-              <span className="text-secondary">Upcoming SDE Intern at Origin Medical</span>
+              <span className="text-secondary">SDE Intern at Origin Medical</span>
             </h2>
             <p className={`text-lg ${darkMode ? 'text-textSecondary-dark' : 'text-textSecondary-light'} mb-8`}>
               Passionate about problem-solving and software development
