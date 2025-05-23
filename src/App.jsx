@@ -30,7 +30,6 @@ function App() {
       behavior: 'smooth',
     });
   };
-
   const projects = [
       {
         "name": "Foodies - Modern Food Ordering Web Application",
